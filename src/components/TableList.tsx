@@ -7,24 +7,26 @@ type TableListProps = {
 
 const TableList: React.FC<TableListProps> = ({ data, columns }) => {
   return (
-    <table>
-      <thead>
-        <tr>
-          {columns.map((col) => (
-            <th key={col}>{col}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {data.map((row, index) => (
-          <tr key={index}>
+    <>
+      <table>
+        <thead>
+          <tr>
             {columns.map((col) => (
-              <td key={col}>{row[col]}</td>
+              <th key={col}>{col}</th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {data.map((row, index) => (
+            <tr key={index}>
+              {columns.map((col) => (
+                <td key={col}>{row[col]}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 };
 

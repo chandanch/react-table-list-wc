@@ -6963,10 +6963,10 @@ var m = reactDomExports;
   client.hydrateRoot = m.hydrateRoot;
 }
 const TableList = ({ data, columns }) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("tr", { children: columns.map((col) => /* @__PURE__ */ jsxRuntimeExports.jsx("th", { children: col }, col)) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: data.map((row, index) => /* @__PURE__ */ jsxRuntimeExports.jsx("tr", { children: columns.map((col) => /* @__PURE__ */ jsxRuntimeExports.jsx("td", { children: row[col] }, col)) }, index)) })
-  ] });
+  ] }) });
 };
 class TableListWebComponent extends HTMLElement {
   connectedCallback() {
